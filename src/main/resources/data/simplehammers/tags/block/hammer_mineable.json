@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cobblestone",
+    "minecraft:mossy_cobblestone",
+    "minecraft:cobbled_deepslate",
+    "minecraft:sandstone",
+    "minecraft:red_sandstone",
+    "minecraft:end_stone",
+    "minecraft:calcite",
+    "minecraft:smooth_basalt",
+    "#minecraft:base_stone_overworld",
+    "#minecraft:base_stone_nether"
+  ]
+}

@@ -9,7 +9,10 @@
       "Satorisek",
       "With Rage Studios"
     ],
-    "contact": {
+	"contributors": [
+		"Yosh64_"
+	],
+	"contact": {
       "homepage": "https://modrinth.com/mod/simplehammers",
       "issues": "https://github.com/JustErikSK/SimpleHammers-Mod/issues",
       "sources": "https://github.com/JustErikSK/SimpleHammers-Mod"

@@ -10,7 +10,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.MiningToolItem;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Hand;
@@ -18,6 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.withrage.simplehammers.config.SimpleHammersConfig;
+import net.withrage.simplehammers.tags.ModTags;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -26,7 +26,7 @@ public class HammerItem extends MiningToolItem {
     public HammerItem(ToolMaterial material, int attackDamage, float attackSpeed, int durability, Settings settings) {
         super(
                 material,
-                BlockTags.PICKAXE_MINEABLE,
+                ModTags.Blocks.HAMMER_MINEABLE,
                 settings.attributeModifiers(MiningToolItem.createAttributeModifiers(material, attackDamage, attackSpeed))
                         .maxDamage(durability)
         );
@@ -55,7 +55,7 @@ public class HammerItem extends MiningToolItem {
         boolean result = super.postMine(stack, world, state, pos, miner);
 
         if (!world.isClient() && miner instanceof PlayerEntity player) {
-            if (!state.isIn(BlockTags.PICKAXE_MINEABLE)) return result;
+            if (!state.isIn(ModTags.Blocks.HAMMER_MINEABLE)) return result;
             if (SimpleHammersConfig.sneakMines1x1 && player.isSneaking()) return result;
 
             Direction hitFace = HammerMiningContext.consumeLastHitFace(player);
@@ -122,7 +122,7 @@ public class HammerItem extends MiningToolItem {
         }
         BlockState targetState = world.getBlockState(targetPos);
         if (targetState.isAir() || targetState.getHardness(world, targetPos) < 0.0F) return false;
-        if (!targetState.isIn(BlockTags.PICKAXE_MINEABLE)) return false;
+        if (!targetState.isIn(ModTags.Blocks.HAMMER_MINEABLE)) return false;
         if (!hammerStack.isSuitableFor(targetState)) return false;
         if (!player.canHarvest(targetState)) return false;
         float originHardness = originState.getHardness(world, originPos);
