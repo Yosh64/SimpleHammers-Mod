@@ -3,16 +3,16 @@
   "category": "equipment",
   "key": {
     "A": {
-      "tag": "simplehammers:handles"
+      "item": "minecraft:stick"
     },
     "B": {
-      "item": "simplehammers:golden_hammer_head"
+      "item": "minecraft:golden_ingot"
     }
   },
   "pattern": [
-    "  B",
-    " A ",
-    "   "
+    "BBB",
+    "BAB",
+    " A"
   ],
   "result": {
     "count": 1,

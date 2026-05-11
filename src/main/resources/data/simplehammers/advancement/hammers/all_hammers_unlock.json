@@ -10,14 +10,6 @@
     "hidden": false
   },
   "criteria": {
-    "crafted_wooden_hammer": {
-      "trigger": "minecraft:recipe_crafted",
-      "conditions": { "recipe_id": "simplehammers:wooden_hammer" }
-    },
-    "crafted_stone_hammer": {
-      "trigger": "minecraft:recipe_crafted",
-      "conditions": { "recipe_id": "simplehammers:stone_hammer" }
-    },
     "crafted_copper_hammer": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": { "recipe_id": "simplehammers:copper_hammer" }
@@ -34,10 +26,6 @@
       "trigger": "minecraft:recipe_crafted",
       "conditions": { "recipe_id": "simplehammers:diamond_hammer" }
     },
-    "crafted_emerald_hammer": {
-      "trigger": "minecraft:recipe_crafted",
-      "conditions": { "recipe_id": "simplehammers:emerald_hammer" }
-    },
     "crafted_netherite_hammer": {
       "trigger": "minecraft:inventory_changed",
       "conditions": { "recipe_id": "simplehammers:netherite_hammer" }
@@ -45,13 +33,10 @@
   },
 
   "requirements": [
-    ["crafted_wooden_hammer"],
-    ["crafted_stone_hammer"],
     ["crafted_copper_hammer"],
     ["crafted_iron_hammer"],
     ["crafted_golden_hammer"],
     ["crafted_diamond_hammer"],
-    ["crafted_emerald_hammer"],
     ["crafted_netherite_hammer"]
   ]
 }
