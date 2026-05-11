@@ -14,22 +14,11 @@ public class ModItemGroups {
             Identifier.of(SimpleHammers.MOD_ID, "iron_hammer"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.simplehammers"))
                     .icon(() -> new ItemStack(ModItems.IRON_HAMMER)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.WOODEN_HAMMER);
-                        entries.add(ModItems.STONE_HAMMER);
                         entries.add(ModItems.COPPER_HAMMER);
                         entries.add(ModItems.GOLDEN_HAMMER);
                         entries.add(ModItems.IRON_HAMMER);
-                        entries.add(ModItems.EMERALD_HAMMER);
                         entries.add(ModItems.DIAMOND_HAMMER);
                         entries.add(ModItems.NETHERITE_HAMMER);
-                        entries.add(ModItems.WOODEN_HANDLE);
-                        entries.add(ModItems.WOODEN_HAMMER_HEAD);
-                        entries.add(ModItems.STONE_HAMMER_HEAD);
-                        entries.add(ModItems.COPPER_HAMMER_HEAD);
-                        entries.add(ModItems.GOLDEN_HAMMER_HEAD);
-                        entries.add(ModItems.IRON_HAMMER_HEAD);
-                        entries.add(ModItems.EMERALD_HAMMER_HEAD);
-                        entries.add(ModItems.DIAMOND_HAMMER_HEAD);
                     }).build());
 
     public static void registerItemGroups() {

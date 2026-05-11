@@ -12,14 +12,7 @@ public class SimpleHammersConfig {
 
     public static boolean sneakMines1x1 = true;
 
-    public static int woodenDurability = 108;
-    public static int stoneDurability = 262;
     public static int copperDurability = 380;
-    public static int goldenDurability = 64;
-    public static int ironDurability = 506;
-    public static int emeraldDurability = 2084;
-    public static int diamondDurability = 3122;
-    public static int netheriteDurability = 4062;
 
     public static void load() {
         try {
@@ -37,14 +30,7 @@ public class SimpleHammersConfig {
 
             sneakMines1x1 = getBoolean(toml, "general.sneakMines1x1", sneakMines1x1);
 
-            woodenDurability = getInt(toml, "durability.wooden", woodenDurability);
-            stoneDurability = getInt(toml, "durability.stone", stoneDurability);
             copperDurability = getInt(toml, "durability.copper", copperDurability);
-            goldenDurability = getInt(toml, "durability.golden", goldenDurability);
-            ironDurability = getInt(toml, "durability.iron", ironDurability);
-            emeraldDurability = getInt(toml, "durability.emerald", emeraldDurability);
-            diamondDurability = getInt(toml, "durability.diamond", diamondDurability);
-            netheriteDurability = getInt(toml, "durability.netherite", netheriteDurability);
 
         } catch (Exception e) {
             try { writeDefaultFile(); } catch (Exception ignored) {}
@@ -75,15 +61,8 @@ public class SimpleHammersConfig {
                 + "# If true, sneaking mines only 1x1 instead of 3x3.\n"
                 + "sneakMines1x1 = " + sneakMines1x1 + "\n\n"
                 + "[durability]\n"
-                + "# You can change the durability for each hammer here.\n"
-                + "wooden = " + woodenDurability + "\n"
-                + "stone = " + stoneDurability + "\n"
-                + "copper = " + copperDurability + "\n"
-                + "golden = " + goldenDurability + "\n"
-                + "iron = " + ironDurability + "\n"
-                + "emerald = " + emeraldDurability + "\n"
-                + "diamond = " + diamondDurability + "\n"
-                + "netherite = " + netheriteDurability + "\n";
+                + "# You can change the durability for copper hammer here.\n"
+                + "copper = " + copperDurability + "\n";
 
         Files.writeString(PATH, content);
     }
