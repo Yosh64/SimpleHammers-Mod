@@ -7,12 +7,15 @@
     },
     "B": {
       "item": "minecraft:golden_ingot"
+    },
+    "D": {
+      "item": "minecraft:polished_deepslate"
     }
   },
   "pattern": [
-    "BBB",
+    "BDB",
     "BAB",
-    " A"
+    " A "
   ],
   "result": {
     "count": 1,

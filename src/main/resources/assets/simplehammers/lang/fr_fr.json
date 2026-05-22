@@ -1,0 +1,19 @@
+{
+  "item.simplehammers.copper_hammer": "Marteau en cuivre",
+  "item.simplehammers.golden_hammer": "Marteau en or",
+  "item.simplehammers.iron_hammer": "Marteau en fer",
+  "item.simplehammers.diamond_hammer": "Marteau en diamant",
+  "item.simplehammers.netherite_hammer": "Marteau en Netherite",
+
+  "advancements.simplehammers.all_hammers.title": "Master Smith",
+  "advancements.simplehammers.emerald_hammer.title": "Emerald Engineering",
+  "advancements.simplehammers.netherite_hammer.title": "Heavy Metal",
+
+  "advancements.simplehammers.all_hammers.desc": "Fabriques tous les marteaux!",
+  "advancements.simplehammers.netherite_hammer.desc": "Fabriques un marteau en Netherite.",
+
+  "advancements.simplehammers.root.title": "Simple Hammers",
+  "advancements.simplehammers.root.desc": "Make powerful hammers that can mine 3x3!",
+
+  "itemgroup.simplehammers": "Simple Hammers"
+}
