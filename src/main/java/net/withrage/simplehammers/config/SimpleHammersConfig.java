@@ -12,7 +12,7 @@ public class SimpleHammersConfig {
 
     public static boolean sneakMines1x1 = true;
 
-    public static int copperDurability = 380;
+    public static int copperDurability = 190;
 
     public static void load() {
         try {
